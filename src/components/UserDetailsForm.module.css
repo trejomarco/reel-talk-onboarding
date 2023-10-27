@@ -55,6 +55,7 @@
     overflow: hidden;
     position: relative;
     border: 1px solid #ddd;
+    margin-bottom: 20px;
     /* Optional: Add a border for visual distinction */
 }
 
