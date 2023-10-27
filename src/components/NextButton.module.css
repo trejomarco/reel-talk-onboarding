@@ -1,0 +1,17 @@
+.nextButton {
+    background-color: #f9a01b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nextButton:hover {
+    background-color: #d98e1f;
+}

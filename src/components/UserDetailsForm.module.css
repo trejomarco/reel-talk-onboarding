@@ -58,6 +58,14 @@
     /* Optional: Add a border for visual distinction */
 }
 
+
+.image-cropper-wrapper {
+    margin-bottom: 20px;
+    /* Adjust this value as needed to increase/decrease spacing */
+}
+
+
+
 .image-placeholder {
     display: flex;
     justify-content: center;
