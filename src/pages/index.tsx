@@ -28,7 +28,6 @@ export default function Home() {
 
 
 
-
 // import React from 'react';
 // import UserDetailsForm from '../components/UserDetailsForm';
 // import styles from '../styles/Home.module.css'; // Ensure the path is correct

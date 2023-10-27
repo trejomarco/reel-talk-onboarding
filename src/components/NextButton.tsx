@@ -1,17 +1,16 @@
-// NextButton.tsx
+import React from 'react';
+import Link from 'next/link';
 import styles from './NextButton.module.css';
 
-const NextButton: React.FC = () => {
-    const handleNavigation = () => {
-        // Navigate to the next webpage
-        // This will depend on what you're using for navigation
-        // E.g., with Next.js, you might use: Router.push('/nextPage')
-    };
+type Props = {
+    linkTo?: string;
+}
 
+const NextButton: React.FC<Props> = ({ linkTo = "/BirthdaySelection" }) => {
     return (
-        <button className={styles.nextButton} onClick={handleNavigation}>
-            Next
-        </button>
+        <Link href={linkTo}>
+            <button className={styles.nextButton}>Next</button>
+        </Link>
     );
 };
 
