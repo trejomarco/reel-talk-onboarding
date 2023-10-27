@@ -1,10 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Horizontally center */
+    justify-content: center;
+    /* Vertically center */
+    height: 100vh;
+    /* Full height of the viewport */
+    background: #222222;
+}
+
+.onboarding-title {
+    color: #FFA724;
+    /* The color you wanted */
+    margin: 0;
+    /* Reset default margin */
+}
+
+
 .user-details-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
-    margin: 20px auto;
+    align-items: center;
+    /* This will center everything horizontally */
 }
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .image-cropper-container {
     width: 150px;
@@ -14,66 +40,74 @@
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
-    /* Horizontally center the content */
     align-items: center;
-    /* Vertically center the content */
     margin-bottom: 20px;
-    position: relative;
-    margin: 0 auto;
-    /* Horizontally center the container */
+    /* Adds space between image and upload button */
 }
 
 .image-placeholder {
     text-align: center;
     font-size: 12px;
-    /* Adjust the font size if necessary */
 }
 
+.upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+    background-color: #222222;
+    border: 2px solid #FFFFFFEB;
+    color: #FFFFFFEB;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-
+.upload-button:hover {
+    background-color: #FFA724;
+    color: #222222;
+}
 
 .textfield {
+    display: block;
     width: 320px;
     height: 48px;
     padding: 0px 12px 0px 24px;
     border-radius: 8px;
-    border: 1px solid #FFFFFF99;
+    margin: 10px auto;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
         linear-gradient(0deg, #222222, #222222),
         linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-    margin-bottom: 10px;
+    border: 1px solid #FFFFFF99;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* .user-details-form {
+.header {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
-    margin: 20px auto;
-}
-
-.preview-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.preview-image img {
+    align-items: center;
+    justify-content: center;
+    /* This will center the items horizontally within the header */
     width: 100%;
+    /* Ensure the header spans the entire width */
+    margin-bottom: 50px;
+    color: #FFA724;
+}
+
+
+
+.header img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.reelIcon {
+    width: 80px;
+    /* Adjust as necessary */
     height: auto;
-} */
+}
