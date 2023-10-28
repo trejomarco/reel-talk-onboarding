@@ -1,0 +1,136 @@
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 572px;
+    height: 76px;
+    padding: 16px;
+    background-color: red;
+    margin: 20px auto 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: #FFFFFFEB;
+}
+
+.descriptionContainer {
+    width: 504px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    background-color: blue;
+}
+
+/* ... other styles remain unchanged ... */
+
+.inputContainer {
+    margin: 20px auto;
+    /* Adjusted to give some vertical spacing */
+    display: flex;
+    justify-content: start;
+    /* Aligns content to the start (left) */
+    align-items: center;
+    gap: 10px;
+    /* Space between elements inside the container */
+    width: 320px;
+    /* Fixed width */
+    height: 48px;
+    /* Fixed height */
+    padding: 0px 12px 0px 24px;
+    border: 1px solid #6D6D6D;
+    /* White border */
+    border-radius: 8px;
+    background-color: rgb(55, 51, 51);
+    /* Semi-transparent black background */
+    position: relative;
+    /* Helps in positioning the date input correctly */
+}
+
+.inputContainer input[type="date"] {
+    background: transparent;
+    /* Making the input's background transparent */
+    border: none;
+    /* Removing any borders */
+    outline: none;
+    /* Removing the focus outline */
+    color: #6D6D6D;
+    /* Making the text color white */
+    width: 100%;
+    /* Taking the full width of the container */
+    height: 100%;
+    /* Taking the full height of the container */
+    font-size: 16px;
+    /* Adjust the font size to your preference */
+    text-align: left;
+    /* Aligning the text to the center */
+    -webkit-appearance: none;
+    /* Removing default appearance */
+    -moz-appearance: none;
+    /* Same for Firefox */
+    appearance: none;
+    /* General reset for other browsers */
+}
+
+
+
+/* Hide the default calendar picker icon */
+/* .inputContainer input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer; */
+/* } */
+
+
+
+.buttonContainer {
+    margin: 0 auto;
+}
+
+
+
+.movieRecommendationContainer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.movieGrid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* space between movies */
+}
+
+.movieGrid img {
+    width: 100px;
+    /* you can adjust as needed */
+    height: 150px;
+    /* you can adjust as needed */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 48px;
+}

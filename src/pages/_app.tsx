@@ -1,26 +1,23 @@
 import { AppProps } from 'next/app';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import FontLoader from '../components/FontLoader'; // Update the path to where your FontLoader.tsx is located
 import '../styles/globals.css';
 import '../components/transitions.css';
 
 function MyApp({ Component, pageProps, router }: AppProps & { router: any }) {
   return (
-    <TransitionGroup>
-      <CSSTransition key={router.route} classNames="page" timeout={300}>
-        <Component {...pageProps} />
-      </CSSTransition>
-    </TransitionGroup>
+    <>
+      <FontLoader />
+      <TransitionGroup>
+        <CSSTransition key={router.route} classNames="page" timeout={300}>
+          <Component {...pageProps} />
+        </CSSTransition>
+      </TransitionGroup>
+    </>
   );
 }
 
 export default MyApp;
-
-
-
-
-
-
-
 
 
 
