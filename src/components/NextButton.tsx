@@ -6,7 +6,7 @@ type Props = {
     linkTo?: string;
 }
 
-const NextButton: React.FC<Props> = ({ linkTo = "/BirthdaySelection" }) => {
+const NextButton: React.FC<Props> = ({ linkTo = "/Birthday" }) => {
     return (
         <Link href={linkTo}>
             <button className={styles.nextButton}>Next</button>
