@@ -7,12 +7,11 @@ type LoginPageProps = {
 
 export default function LoginPage({ onLogin }: LoginPageProps) {
 
-    // If you need to handle login attempts, you can use a function like this:
+
     const handleLoginAttempt = (method: string) => {
         console.log(`Attempting to log in with ${method}`);
 
-        // You can replace this with actual login logic.
-        // Once login is successful, you can call onLogin.
+
         if (onLogin) {
             onLogin();
         }

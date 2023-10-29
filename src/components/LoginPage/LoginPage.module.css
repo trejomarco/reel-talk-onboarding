@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    /* background-color: #1e1e1e; */
     color: white;
     padding-top: 50px;
     /* background: olive; */
@@ -50,28 +49,22 @@
 
 .buttonBase {
     width: 256px;
-    /* Fixed width */
     height: 48px;
-    /* Fixed height */
+
     padding: 10px;
     border-radius: 8px;
     border: 2px solid;
     border-color: #FFFFFF;
-    /* Setting a solid border */
+
     font-weight: bold;
-    /* Assuming you want bold text as in the previous designs */
+
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
     display: flex;
     align-items: center;
-    /* To center the content vertically */
     justify-content: center;
-    /* To center the content horizontally */
     background-color: #222222;
-    /* Set the background color */
     color: #fff;
-    /* Assuming you want white text on all buttons */
-    /* background: yellow; */
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -81,7 +74,6 @@
     color: #FFFFFFEB;
 }
 
-/* ... other styles ... */
 
 
 
@@ -89,10 +81,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Updated gap */
     width: 260px;
-    /* Assuming you want to maintain the width of this container */
-    /* background: purple; */
 }
 
 .appleButton {
@@ -101,9 +90,8 @@
 
 .appleButton::before {
     content: url('../../assets/apple-logo.svg');
-    /* Path to your apple logo SVG */
     margin-right: 10px;
-    /* Spacing between the logo and the text */
+
 }
 
 .buttonBase:hover {
@@ -120,9 +108,8 @@
 
 .googleButton::before {
     content: url('../../assets/google-logo.svg');
-    /* Path to your apple logo SVG */
+
     margin-right: 10px;
-    /* Spacing between the logo and the text */
 }
 
 .facebookButton {
@@ -131,9 +118,7 @@
 
 .facebookButton::before {
     content: url('../../assets/fb-logo.svg');
-    /* Path to your apple logo SVG */
     margin-right: 10px;
-    /* Spacing between the logo and the text */
 }
 
 .emailButton {

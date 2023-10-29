@@ -1,20 +1,3 @@
-/* .progressBarContainer {
-    width: 437.75px;
-    height: 20px;
-    background-color: #D8D8D8;
-    border-radius: 10px;
-    position: relative;
-}
-
-.progressBarFill {
-    height: 100%;
-    background-color: #FFD700;
-    border-radius: 10px;
-} */
-
-
-
-
 .progressBarContainer {
     width: 437.75px;
     height: 4px;
@@ -22,7 +5,7 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    /* To make sure inner elements do not spill outside the border-radius */
+
 }
 
 .progressBarFill {
@@ -34,24 +17,24 @@
 .progressStep {
     position: absolute;
     width: 20px;
-    /* Assuming this based on your design, you might want to adjust */
+
     height: 20px;
     border-radius: 50%;
     background-color: #B4B4B4;
-    /* Gray color for future steps */
+
     border: 2px solid #B4B4B4;
     top: 50%;
     transform: translateY(-50%);
-    /* To center it vertically */
+
 }
 
 .progressStep.completed {
     background-color: #FFD700;
-    /* Color for completed step */
+
     border-color: #FFD700;
 }
 
 .progressStep.active {
     background-color: #FFD700;
-    /* Color for active step */
+
 }
