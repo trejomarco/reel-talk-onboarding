@@ -84,11 +84,11 @@
     /* Adjust the font size to your preference */
     text-align: left;
     /* Aligning the text to the center */
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     /* Removing default appearance */
-    -moz-appearance: none;
+    /* -moz-appearance: none; */
     /* Same for Firefox */
-    appearance: none;
+    /* appearance: none; */
     /* General reset for other browsers */
 }
 
@@ -101,6 +101,16 @@
 /* } */
 
 
+/* Hide the default calendar picker icon */
+.inputContainer input[type="date"]:not(:placeholder-shown)::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* For Firefox, hide the arrow icon */
+.inputContainer input[type="date"]:not(:placeholder-shown)::-moz-calendar-picker-indicator {
+    display: none;
+}
 
 
 .movieRecommendationContainer {
@@ -187,6 +197,34 @@
     border: none;
     color: white;
 }
+
+
+
+
+
+.inputContainer.selectedDateBorder {
+    border-color: #FFA500;
+    /* Orange border */
+    position: relative;
+    /* To position the checkmark */
+}
+
+.inputContainer.selectedDateBorder::after {
+    content: "✓";
+    /* Checkmark symbol */
+    color: rgb(18, 219, 18);
+    font-size: 20px;
+    margin-left: 1px;
+    /* Orange color */
+    position: absolute;
+    right: 10px;
+    /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+
 
 
 

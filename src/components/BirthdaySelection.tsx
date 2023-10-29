@@ -1,19 +1,18 @@
-
 import React, { useState } from 'react';
 import styles from './BirthdaySelection.module.css';
 
 import princess from '../assets/princess.jpg';
 import going30 from '../assets/13going30.jpg';
 import thisIs40 from '../assets/thisis40.jpg';
-import seventeenAgain from '../assets/17again.jpg';  // Fixed the naming for 17 again
+import seventeenAgain from '../assets/17again.jpg';
 import boyhood from '../assets/boyhood.jpg';
-import anotherMovie from '../assets/another-movie.jpg'; // Made the naming more descriptive
+import anotherMovie from '../assets/another-movie.jpg';
 
 import Image from 'next/image';
 
-
 export default function BirthdaySelection() {
     const [dateOfBirth, setDateOfBirth] = useState(new Date());
+    const [isDateSelected, setIsDateSelected] = useState(false); // State to track date selection
 
     return (
         <div className={styles.container}>
@@ -24,11 +23,14 @@ export default function BirthdaySelection() {
                 To personalize your content recommendations and to ensure it's all
                 age-appropriate, could you kindly share your date of birth with us?
             </div>
-            <div className={styles.inputContainer}>
+            <div className={`${styles.inputContainer} ${isDateSelected ? styles.selectedDateBorder : ''}`}> {/* Conditional class */}
                 <input
                     type="date"
                     value={dateOfBirth.toISOString().substr(0, 10)}
-                    onChange={(e) => setDateOfBirth(new Date(e.target.value))}
+                    onChange={(e) => {
+                        setDateOfBirth(new Date(e.target.value));
+                        setIsDateSelected(true);  // Set isDateSelected to true when a date is picked
+                    }}
                 />
             </div>
             <div className={styles.movieRecommendationContainer}>
@@ -41,7 +43,6 @@ export default function BirthdaySelection() {
                     <Image src={seventeenAgain} alt="17 Again" width={150} height={225} />
                     <Image src={boyhood} alt="Boyhood" width={150} height={225} />
                     <Image src={anotherMovie} alt="Another Movie" width={150} height={225} />
-
                 </div>
             </div>
             <div className={styles.buttonContainer}>
@@ -51,6 +52,124 @@ export default function BirthdaySelection() {
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import styles from './BirthdaySelection.module.css';
+
+// import princess from '../assets/princess.jpg';
+// import going30 from '../assets/13going30.jpg';
+// import thisIs40 from '../assets/thisis40.jpg';
+// import seventeenAgain from '../assets/17again.jpg';  // Fixed the naming for 17 again
+// import boyhood from '../assets/boyhood.jpg';
+// import anotherMovie from '../assets/another-movie.jpg'; // Made the naming more descriptive
+
+// import Image from 'next/image';
+
+
+// export default function BirthdaySelection() {
+//     const [dateOfBirth, setDateOfBirth] = useState(new Date());
+
+//     return (
+//         <div className={styles.container}>
+//             <div className={styles.titleContainer}>
+//                 <h2>Welcome User! <br /> Mind sharing your birthdate?</h2>
+//             </div>
+//             <div className={styles.descriptionContainer}>
+//                 To personalize your content recommendations and to ensure it's all
+//                 age-appropriate, could you kindly share your date of birth with us?
+//             </div>
+//             <div className={styles.inputContainer}>
+//                 <input
+//                     type="date"
+//                     value={dateOfBirth.toISOString().substr(0, 10)}
+//                     onChange={(e) => setDateOfBirth(new Date(e.target.value))}
+//                 />
+//             </div>
+//             <div className={styles.movieRecommendationContainer}>
+//                 <h3 className={styles.movieRecommendationHeader}>We love our birthday movies 🎉</h3>
+
+//                 <div className={styles.movieGrid}>
+//                     <Image src={princess} alt="Princess" width={72} height={109.03} layout="fixed" />
+//                     <Image src={going30} alt="13 Going 30" width={72} height={109.03} />
+//                     <Image src={thisIs40} alt="This is 40" width={150} height={225} />
+//                     <Image src={seventeenAgain} alt="17 Again" width={150} height={225} />
+//                     <Image src={boyhood} alt="Boyhood" width={150} height={225} />
+//                     <Image src={anotherMovie} alt="Another Movie" width={150} height={225} />
+
+//                 </div>
+//             </div>
+//             <div className={styles.buttonContainer}>
+//                 <button>Back</button>
+//                 <button>Next</button>
+//             </div>
+//         </div>
+//     );
+// }
 
 
 

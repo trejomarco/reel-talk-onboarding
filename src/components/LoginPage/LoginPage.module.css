@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtext {
+    margin-bottom: 40px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 260px;
+}
+
+.buttonBase {
+    width: 256px;
+    /* Fixed width */
+    height: 48px;
+    /* Fixed height */
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid;
+    /* Setting a solid border */
+    font-weight: bold;
+    /* Assuming you want bold text as in the previous designs */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    /* To center the content vertically */
+    justify-content: center;
+    /* To center the content horizontally */
+    background-color: #222222;
+    /* Set the background color */
+    color: #fff;
+    /* Assuming you want white text on all buttons */
+}
+
+/* ... other styles ... */
+
+
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Updated gap */
+    width: 260px;
+    /* Assuming you want to maintain the width of this container */
+}
+
+.appleButton {
+    position: relative;
+}
+
+.appleButton::before {
+    content: url('../../assets/apple-logo.svg');
+    /* Path to your apple logo SVG */
+    margin-right: 10px;
+    /* Spacing between the logo and the text */
+}
+
+.buttonBase:hover {
+    transform: scale(1.02);
+}
+
+.appleButton {
+    color: #fff;
+}
+
+.googleButton {
+    color: #fff;
+}
+
+.googleButton::before {
+    content: url('../../assets/google-logo.svg');
+    /* Path to your apple logo SVG */
+    margin-right: 10px;
+    /* Spacing between the logo and the text */
+}
+
+.facebookButton {
+    color: #fff;
+}
+
+.facebookButton::before {
+    content: url('../../assets/fb-logo.svg');
+    /* Path to your apple logo SVG */
+    margin-right: 10px;
+    /* Spacing between the logo and the text */
+}
+
+.emailButton {
+    color: #fff;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #FFA500;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.cancelButton {
+    background-color: transparent;
+    border: 2px solid #6D6D6D;
+    color: #6D6D6D;
+}
+
+.cancelButton:hover {
+    background-color: #6D6D6D;
+    color: #fff;
+}
