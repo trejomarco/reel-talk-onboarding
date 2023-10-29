@@ -35,7 +35,7 @@ export default function BirthdaySelection() {
                 <h3 className={styles.movieRecommendationHeader}>We love our birthday movies 🎉</h3>
 
                 <div className={styles.movieGrid}>
-                    <Image src={princess} alt="Princess" width={72} height={109.03} />
+                    <Image src={princess} alt="Princess" width={72} height={109.03} layout="fixed" />
                     <Image src={going30} alt="13 Going 30" width={72} height={109.03} />
                     <Image src={thisIs40} alt="This is 40" width={150} height={225} />
                     <Image src={seventeenAgain} alt="17 Again" width={150} height={225} />

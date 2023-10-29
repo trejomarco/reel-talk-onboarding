@@ -108,6 +108,9 @@
     text-align: center;
     background: rgb(55, 51, 51);
     margin-bottom: 56px;
+    padding: 24px;
+    border-radius: 8px;
+    padding-top: 15px;
 }
 
 .movieGrid {
@@ -118,9 +121,9 @@
 }
 
 .movieGrid img {
-    width: 100px;
+    width: 72px;
     /* you can adjust as needed */
-    height: 150px;
+    height: 109.03px;
     /* you can adjust as needed */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -140,7 +143,7 @@
     text-align: center;
     color: #FFFFFFEB;
     /* Color of the text */
-    padding: 10px 0;
+    padding: 0px 0;
     /* Adjust this for spacing around the text inside the background */
     background: rgb(55, 51, 51);
 
