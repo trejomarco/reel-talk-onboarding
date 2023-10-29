@@ -1,159 +1,104 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Horizontally center */
-    justify-content: center;
-    /* Vertically center */
-    height: 100vh;
-    /* Full height of the viewport */
-    background: #222222;
-}
-
-.onboarding-title {
-    color: #FFA724;
-    /* The color you wanted */
-    margin: 0;
-    /* Reset default margin */
-}
-
-
-.user-details-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* This will center everything horizontally */
-}
-
-.image-section {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.circleCrop {
-    width: 200px;
-    /* Set this to your desired width */
-    height: 200px;
-    /* Ensure this is the same as width to get a circle */
-    overflow: hidden;
-    border-radius: 50%;
-    /* This makes it circular */
+.title {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-
-.circleCrop::before {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-.image-cropper-container {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    /* Optional: Add a border for visual distinction */
-}
-
-
-.image-cropper-wrapper {
-    margin-bottom: 20px;
-    /* Adjust this value as needed to increase/decrease spacing */
-}
-
-
-
-.image-placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #f5f5f5;
-    /* Optional: Background color for placeholder */
-    font-size: 16px;
-    /* Adjust font-size as needed */
-}
-
-.upload-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 40px;
-    padding: 10px;
-    background-color: #222222;
-    border: 2px solid #FFFFFFEB;
-    color: #FFFFFFEB;
-    border-radius: 8px;
-    cursor: pointer;
+.description {
+    font-size: 14px;
     text-align: center;
-    margin: 0 auto;
-    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 30px;
 }
 
-.upload-button:hover {
-    background-color: #FFA724;
-    color: #222222;
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 20px;
 }
 
-.textfield {
-    display: block;
-    width: 320px;
-    height: 48px;
-    padding: 0px 12px 0px 24px;
-    border-radius: 8px;
-    margin: 10px auto;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-        linear-gradient(0deg, #222222, #222222),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-    border: 1px solid #FFFFFF99;
-}
-
-
-
-
-.header {
+.profile-image {
+    width: 80px;
+    height: 80px;
+    background-color: #444444;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* This will center the items horizontally within the header */
-    width: 100%;
-    /* Ensure the header spans the entire width */
-    margin-bottom: 50px;
-    color: #FFA724;
+    position: relative;
+    cursor: pointer;
 }
 
-
-
-.header img {
-    height: 32px;
-    margin-right: 10px;
-}
-
-
-.reelIconContainer {
+.add-icon {
     position: absolute;
-    top: 10px;
-    /* Adjust as needed for top spacing */
-    left: 10px;
-    /* Adjust as needed for left spacing */
-    /* border: 2px solid #000; */
-    /* Add a border, adjust color and thickness as desired */
-    padding: 5px;
-    /* Adjust as needed for space between border and image */
-    border-radius: 5px;
-    /* Optional: For rounded corners */
+    bottom: 5px;
+    right: 5px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D2D2D;
 }
 
+.profile-details {
+    margin-left: 20px;
+    flex-grow: 1;
+}
 
+.displayName {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-.reelIcon {
-    width: 80px;
-    /* Adjust as necessary */
-    height: auto;
+.bioTextarea {
+    width: 100%;
+    background-color: #444444;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.action-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+.next {
+    background-color: #FF9900;
+    color: #FFFFFF;
 }
