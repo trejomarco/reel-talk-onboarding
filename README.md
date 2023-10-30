@@ -12,9 +12,8 @@ This project serves as my submission for the Frontend Developer Intern Challenge
    (currently working on)
 
 ## Features Still in progress
-4. **Display Name, Location & Photo Add Section**: Users can upload a profile picture, and update their display name and location.
-5. **Genre Selection**: Allows users to choose their preferred movie or TV-show genres.
-6. **Top 5 movie selctions**  Allows users to pick their top 5 movies.
+4. **Genre Selection**: Allows users to choose their preferred movie or TV-show genres.
+5. **Top 5 movie selctions**  Allows users to pick their top 5 movies.
 
 ## Technologies & Libraries Used
 
