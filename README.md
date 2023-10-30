@@ -8,7 +8,7 @@ This project serves as my submission for the Frontend Developer Intern Challenge
 
 1. **Log in**: The login page serves as the primary entry point for users to access Reel Talk.
 2. **Birthday Selection**: Users can select their birth date from a calendar.
-3. 4. **Display Name, Location & Photo Add Section**: Users can upload a profile picture, and update their display name and location. (currently working on)
+3. **Display Name, Location & Photo Add Section**: Users can upload a profile picture, and update their display name and location. (currently working on)
 
 ## Features Still in progress
 4. **Display Name, Location & Photo Add Section**: Users can upload a profile picture, and update their display name and location.
