@@ -1,40 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Reel Talk Frontend Developer Intern Challenge 🎥🍿
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+This project serves as my submission for the Frontend Developer Intern Challenge at Reel Talk. The application provides an onboarding flow for new users to customize their profile and showcase their interests in movies and TV-shows. Implemented features include setting a display name, location, photo, birthday selection, and genre preference.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features Implemented
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Log in**: The login page serves as the primary entry point for users to access Reel Talk.
+2. **Birthday Selection**: Users can select their birth date from a calendar.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Features Still in progress
+4. **Display Name, Location & Photo Add Section**: Users can upload a profile picture, and update their display name and location.
+5. **Genre Selection**: Allows users to choose their preferred movie or TV-show genres.
+6. **Top 5 movie selctions**  Allows users to pick their top 5 movies.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Technologies & Libraries Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Next.js
+- TypeScript
+- Firebase (for user authentication and data storage)
+- Node.js (for any backend utility)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation and Setup
 
-## Learn More
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your_username/reeltalk-onboarding.git
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Navigate to the Project Directory**:
+    ```bash
+    cd reeltalk-onboarding
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Install Required Dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Run the Project**:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+## Design Decisions & Data Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Design Decisions**:
+  - Adhered closely to the provided Figma designs to ensure design fidelity.
+  - Introduced smooth transitions for enhanced user experience.
+  - Utilized responsive design techniques to ensure usability across devices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Feedback & Reflection
+
+I managed to implement two of the four sections within the provided timeframe. Given more time, I would work on 'Display Name, location, and photo add section as well as integrate the 'Top 5 Movie Selection' feature and refine the overall user experience further. My focus was on design accuracy, code modularity, and overall functionality.
+
+
+Thank you for considering my submission. I look forward to your feedback and further steps in the interview process.
